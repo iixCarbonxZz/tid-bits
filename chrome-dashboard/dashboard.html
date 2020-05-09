@@ -1,0 +1,65 @@
+<html>
+<head>
+<!--FONT-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!--STYLESHEET-->
+	<link id="stylesheet" type="text/css" rel="stylesheet" href="css/stylesheet-default.css"/>
+<!--FONTAWESOME-->
+	<link id="stylesheet" type="text/css" rel="stylesheet" href="../css/fontawesome/css/all.css"/>
+<!--FAVICON-->
+<link rel="shortcut icon" href="..\img\favicon\favicon.ico" />
+<!--TITLE-->
+<title>Mini-Projects | Home</title>
+<!--NIGHT MODE-->
+<script>
+	function nightMode(){
+		var stylesheet = document.getElementById("stylesheet");
+		var label = document.getElementById("darkLabel");
+		//var logo = document.getElementById("bannerImage");
+		if(stylesheet.getAttribute("href") == "css/stylesheet-default.css"){
+			stylesheet.setAttribute("href", "css/stylesheet-nocturnal.css");
+			label.innerHTML = "Light Mode";
+			//logo.setAttribute("src", "discord-Logo-White.png");
+		}
+		else{
+			stylesheet.setAttribute("href", "css/stylesheet-default.css");
+			label.innerHTML = "Dark Mode";
+			//logo.setAttribute("src", "discord-Logo-Color.png");
+		}
+	}
+</script>
+<!--REMOVE OVERLAY-->
+<script>
+	function removeKebab(){
+		var kebab = document.querySelector('[alt="www.000webhost.com"]');
+		kebab.style.visibility = "hidden";
+	}
+</script>
+</head>
+<body onload="removeKebab()">
+	<h1 class="pageHeader">Welcome to Internet<br><div style="width: 340px;" class="horizontalLine"></div></h1>
+	<div class="dashWrapper">
+		<table class="dashboard">
+			<tr class="dashboard">
+			<td class="dashboard"><a href="http://www.youtube.com"><div class="dashButton youtube"><i class="fab fa-youtube"></i></div></a></td class="dashboard">
+			<td class="dashboard"><a href="http://www.roblox.com"><div class="dashButton roblox"><i class="fas fa-square"></i><i class="fas fa-square roblox-background-element" style="font-size:10px;"></i></div></a></td class="dashboard">
+			<td class="dashboard"><a href="http://www.facebook.com"><div class="dashButton facebook"><i class="fab fa-facebook-square"></i></div></a></td class="dashboard">
+			</tr>
+			<tr class="dashboard">
+			<td class="dashboard"><a href="http://store.steampowered.com"><div class="dashButton steam"><i class="fab fa-steam-square"></i></div></a></td class="dashboard">
+			<td class="dashboard"><a href="http://www.reddit.com"><div class="dashButton reddit"><i class="fab fa-reddit"></i></div></a></td class="dashboard">
+			<td class="dashboard"><a href="http://www.google.com"><div class="dashButton google"><i class="fab fa-google"></i></div></a></td class="dashboard">
+			</tr>
+			<tr class="dashboard">
+			<td class="dashboard"><a href="http://www.amazon.co.uk"><div class="dashButton amazon"><i class="fab fa-amazon"></i></div></a></td class="dashboard">
+			<td class="dashboard"><a href="http://drive.google.com"><div class="dashButton drive"><i class="fab fa-google-drive"></i></div></a></td class="dashboard">
+			<td class="dashboard"><a href="chrome://settings"><div class="dashButton settings"><i class="fas fa-cog"></i></div></a></td class="dashboard">
+			</tr>
+		</table>
+	</div>
+	<div class="button" onClick = "nightMode()">
+		<div id="darkLabel" class="label">Dark Mode
+		</div>
+	</div>
+</body>
+</html>

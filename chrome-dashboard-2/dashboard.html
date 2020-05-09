@@ -1,0 +1,66 @@
+<html>
+<head>
+<!--FONT-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!--STYLESHEET-->
+	<link id="stylesheet" type="text/css" rel="stylesheet" href="css/stylesheet-default.css"/>
+<!--FONTAWESOME-->
+	<script src="https://kit.fontawesome.com/c028653152.js" crossorigin="anonymous"></script>
+<!--FAVICON-->
+<link rel="shortcut icon" href="img\favicon\favicon.ico" />
+<!--TITLE-->
+<title>New Tab</title>
+<!--NIGHT MODE-->
+<script>
+	function nightMode(){
+		var stylesheet = document.getElementById("stylesheet");
+		var label = document.getElementById("darkLabel");
+		//var logo = document.getElementById("bannerImage");
+		if(stylesheet.getAttribute("href") == "css/stylesheet-default.css"){
+			stylesheet.setAttribute("href", "css/stylesheet-nocturnal.css");
+			label.innerHTML = "Light Mode";
+			//logo.setAttribute("src", "discord-Logo-White.png");
+		}
+		else{
+			stylesheet.setAttribute("href", "css/stylesheet-default.css");
+			label.innerHTML = "Dark Mode";
+			//logo.setAttribute("src", "discord-Logo-Color.png");
+		}
+	}
+</script>
+<!--REMOVE OVERLAY-->
+<script>
+	function removeKebab(){
+		var kebab = document.querySelector('[alt="www.000webhost.com"]');
+		kebab.style.visibility = "hidden";
+	}
+</script>
+</head>
+<body onload="removeKebab()">
+	<h1 class="pageHeader">Welcome to Internet<br><div style="width: 340px;" class="horizontalLine"></div></h1>
+	<div class="dashWrapper">
+			<a href="http://www.youtube.com"><div class="dashButton youtube"><i class="content fab fa-youtube"></i></div></a>
+			<a href="http://www.roblox.com"><div class="dashButton roblox"></i></div></a>
+			<a href="http://www.reddit.com"><div class="dashButton reddit"><i class="content fab fa-reddit"></i></div></a>
+			<a href="http://store.steampowered.com"><div class="dashButton steam"><i class="content fab fa-steam-square"></i></div></a>
+			<a href="http://www.xbox.com"><div class="dashButton xbox"><i class="content fab fa-xbox"></i></div></a>
+			<a href="http://battle.net/"><div class="dashButton battlenet"><i class="content fab fa-battle-net"></i></div></a>
+			<a href="http://www.amazon.co.uk"><div class="dashButton amazon"><i class="content fab fa-amazon"></i></div></a>
+			<a href="http://www.ebay.co.uk"><div class="dashButton ebay"><i class="content fab fa-ebay"></i></div></a>
+			<a href="http://drive.google.com"><div class="dashButton drive"><i class="content fab fa-google-drive"></i></div></a>
+			<a href="http://www.google.com"><div class="dashButton google"><i class="content fab fa-google"></i></div></a>
+			<a href="http://www.facebook.com"><div class="dashButton facebook"><i class="content fab fa-facebook-square"></i></div></a>
+			<a href="https://www.peoplestuffuk.com/WFMMCDPRD/Login.jsp"><div class="dashButton peoplestuff"><i class="content fas fa-address-book"></i></div></a>
+			<a href="#"><div class="dashButton"></div></a>
+			<a href="#"><div class="dashButton"></div></a>
+			<a href="#"><div class="dashButton"></div></a>
+			<a href="#"><div class="dashButton"></div></a>
+			<a href="#"><div class="dashButton"></div></a>
+			<a href="#"><div class="dashButton"></div></a>
+	</div>
+	<div class="button" onClick = "nightMode()">
+		<div id="darkLabel" class="label">Dark Mode
+		</div>
+	</div>
+</body>
+</html>

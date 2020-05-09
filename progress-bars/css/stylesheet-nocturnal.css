@@ -1,0 +1,95 @@
+body{
+	background-color: 	#181C25;
+}
+
+#bannerImage{
+	height: 100px;
+}
+
+.loadBar{
+
+	height: 			20px;
+	width: 				400px;
+	background-color: 	#12151C;
+	border: 1px solid 	#0D1015;
+	border-radius: 		15px;
+	}
+
+.loadBar .loadBarFill{
+
+	position:			relative;
+	height: 			100%;
+	background-image: 	linear-gradient(to right, #008AE5, #00E48B);
+	border-radius: 		15px;
+	overflow:			hidden;
+	}
+	
+
+.loadBar .label{
+
+	position: 			absolute;
+    	width: 			400px;
+	color: 				#FFFFFF;
+	line-height: 		20px;
+	font-family: 		arial;
+	font-size: 			12.5px;
+	text-align:			center;
+	font-weight:		bold;
+	padding-top: 		1px;
+	padding-bottom: 	1px;
+	user-select:		none;
+}
+
+.loadBarFill .label{
+
+	position: 			absolute;
+    	width: 			400px;
+	color: 				#12151C;
+	line-height: 		20px;
+	font-family: 		arial;
+	font-size: 			12.5px;
+	text-align:			center;
+	font-weight:		bold;
+	padding-top: 		1px;
+	padding-bottom: 	1px;
+	user-select:		none;
+}
+
+.button{
+	width: 				125px;
+	height: 			30px;
+	border: 			2px solid #008AE5;
+	border-radius:		30px;
+	text-align:			center;
+	background-color:	#0C0E12; 
+}
+
+.button:hover{
+	cursor:				pointer;
+	background-image:	linear-gradient(to right, #00E48B, #008AE5);
+}
+
+.button .label{
+	font-family: 		'Open Sans', sans-serif;
+	font-weight:		bold;
+	font-size:			12px;
+	line-height: 		30px;
+	color: 				#FFFFFF;
+	user-select:		none;
+}
+
+.button:hover .label{
+	color: 				#FFFFFF;
+}
+
+.back{
+	color: 				#FFFFFF;
+}
+
+.back:hover{
+	color:				#008AE5;
+}
+
+.back:visited{
+	color:				#FFFFFF;
+}

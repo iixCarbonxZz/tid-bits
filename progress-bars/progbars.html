@@ -1,0 +1,146 @@
+<html>
+<head>
+<!--FONT-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!--STYLESHEET-->
+    <link id="stylesheetShare" type="text/css" rel="stylesheet" href="../css/stylesheet-shared.css"/>
+	<link id="stylesheet" type="text/css" rel="stylesheet" href="css/stylesheet-nocturnal.css"/>
+<!--FAVICON-->
+<link rel="shortcut icon" href="..\img\favicon\favicon.ico" />
+<!--TITLE-->
+<title>Mini-Projects | Progress Bars Demo</title>
+<!--JAVASCRIPT-->
+<script>
+	function nightMode(){
+		var stylesheet = document.getElementById("stylesheet");
+		var label = document.getElementById("darkLabel");
+		//var logo = document.getElementById("bannerImage");
+		if(stylesheet.getAttribute("href") == "css/stylesheet-default.css"){
+			stylesheet.setAttribute("href", "css/stylesheet-nocturnal.css");
+			label.innerHTML = "Light Mode";
+			//logo.setAttribute("src", "discord-Logo-White.png");
+		}
+		else{
+			stylesheet.setAttribute("href", "css/stylesheet-default.css");
+			label.innerHTML = "Dark Mode";
+			//logo.setAttribute("src", "discord-Logo-Color.png");
+		}
+	}
+</script>
+<!--REMOVE OVERLAY-->
+<script>
+	function removeKebab(){
+		var kebab = document.querySelector('[alt="www.000webhost.com"]');
+		kebab.style.visibility = "hidden";
+	}
+</script>
+</head>
+<body onload="removeKebab()">
+	<!--BACK LINK-->
+	<a class="back" href="../index.html">&lt;&lt; Back to project list</a>
+	<!--<img id="bannerImage" src="Discord-Logo-Color.png" />-->
+	<div class="loadBar">
+		<div class="label">100%
+		</div>
+		<div class="loadBarFill" style="width: 100%;">
+			<div class="label">100%
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="loadBar">
+		<div class="label">90%
+		</div>
+		<div class="loadBarFill" style="width: 90%;">
+			<div class="label">90%
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="loadBar">
+		<div class="label">80%
+		</div>
+		<div class="loadBarFill" style="width: 80%;">
+			<div class="label">80%
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="loadBar">
+		<div class="label">70%
+		</div>
+		<div class="loadBarFill" style="width: 70%;">
+			<div class="label">70%
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="loadBar">
+		<div class="label">60%
+		</div>
+		<div class="loadBarFill" style="width: 60%;">
+			<div class="label">60%
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="loadBar">
+		<div class="label">50%
+		</div>
+		<div class="loadBarFill" style="width: 50%;">
+			<div class="label">50%
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="loadBar">
+		<div class="label">40%
+		</div>
+		<div class="loadBarFill" style="width: 40%;">
+			<div class="label">40%
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="loadBar">
+		<div class="label">30%
+		</div>
+		<div class="loadBarFill" style="width: 30%;">
+			<div class="label">30%
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="loadBar">
+		<div class="label">20%
+		</div>
+		<div class="loadBarFill" style="width: 20%;">
+			<div class="label">20%
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="loadBar">
+		<div class="label">10%
+		</div>
+		<div class="loadBarFill" style="width: 10%;">
+			<div class="label">10%
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="loadBar">
+		<div class="label">0%
+		</div>
+		<div class="loadBarFill" style="width: 0%;">
+			<div class="label">0%
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="button" onClick = "nightMode()">
+		<div id="darkLabel" class="label">Dark Mode
+		</div>
+	</div>
+</body>
+</html>

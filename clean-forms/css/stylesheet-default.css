@@ -1,0 +1,119 @@
+*{
+    outline: none;
+	margin-bottom: 40px;
+}
+
+#login{
+	
+	background-color: #5555FF;
+	
+}
+
+#register{
+	
+	background-color: #EE5500;
+	
+}
+
+#address{
+	
+	background-color: #22CC44;
+	
+}
+
+
+.formWrapper{
+	
+	width: 400px;
+	height: auto;
+	background-color: #F0F3FC;
+	border: 1px solid #CCCCCC;
+	text-align: center;
+	padding-bottom: 10px;
+	
+	
+}
+
+.formHeader{
+	
+	width: 400px;
+	height: 100px;
+	text-align: center;
+	margin: 0px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.formHeader p{
+	
+	margin: 0px;
+	line-height: 100px;
+	
+	color: #FFFFFF;
+	font-size: 50px;
+	font-family: Arial Black, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	
+}
+
+.formInput{
+	
+	width: 360px;
+	height: 35px;
+	margin: 10px auto;
+	padding: 2px;
+	border: 1px solid #AAAAAA;
+	
+}
+
+.formInput:hover{
+	
+	border: 1px solid #5555FF;
+	
+}
+
+.formInput:focus{
+	
+	border: 1px solid #FFAA00; !Important
+	
+}
+
+.formButton{
+	
+	width: 366px;
+	height: 40px;
+	margin: 10px auto;
+	border: 1px solid #AAAAAA;
+	color: #FFFFFF;
+	
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	
+}
+
+.formDesc{
+	
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	margin-left: 15px;
+	margin-top: -7px;
+	padding: 2px;
+	text-align: left;
+	
+}
+
+.back{
+	color: 				#7289DA;
+}
+
+.back:hover{
+	color:				#DFDFDF;
+}
+
+.back:visited{
+	color:				#7289DA;
+}

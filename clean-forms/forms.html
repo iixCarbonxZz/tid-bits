@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--STYLESHEET-->
+	<link id="stylesheetShare" type="text/css" rel="stylesheet" href="../css/stylesheet-shared.css"/>
+	<link id="stylesheet" type="text/css" rel="stylesheet" href="css/stylesheet-default.css"/>
+	<!--FAVICON-->
+    <link rel="shortcut icon" href="..\img\favicon\favicon.ico" />
+	<!--TITLE-->
+	<title>Mini-Projects | CSS Forms Demo</title>
+	<!--REMOVE OVERLAY-->
+	<script>
+		function removeKebab(){
+			var kebab = document.querySelector('[alt="www.000webhost.com"]');
+			kebab.style.visibility = "hidden";
+		}
+	</script>
+	</head>
+	<body onload="removeKebab()">
+	<!--BACK LINK-->
+	<a class="back" href="../index.html">&lt;&lt; Back to project list</a>
+	<form class="formWrapper">
+		<div class="formHeader" id="login">
+			<p>Login</p>
+		</div>
+		<input class="formInput" type="text" placeholder="Username" autofocus></input>
+		<input class="formInput" type="text" placeholder="Password"></input>
+		<a href="#">
+		<input class="formButton" id="login" type="submit" value="Login"></input>
+		</a>
+		
+	</form>
+	<form class="formWrapper">
+		<div class="formHeader" id="register">
+			<p>Register</p>
+		</div>
+		<input class="formInput" type="text" placeholder="Username" autofocus></input>
+		<input class="formInput" type="text" placeholder="Password"></input>
+		<input class="formInput" type="text" placeholder="Re-Enter Password"></input>
+		<a href="#">
+		<input class="formButton" id="register" type="submit" value="Register"></input>
+		</a>
+		
+	</form>
+	<form class="formWrapper">
+		<div class="formHeader" id="address">
+			<p>Address</p>
+		</div>
+		<input class="formInput" type="text" placeholder="Address Line 1" autofocus></input>
+		<p class="formDesc">Street Address, P.O. Box, Company Name, C/O</p>
+		<input class="formInput" type="text" placeholder="Address Line 2 (optional)"></input>
+		<p class="formDesc">Apartment, Suite, Unit, Building, Floor, etc.</p>
+		<input class="formInput" type="text" placeholder="City"></input>
+		<input class="formInput" type="text" placeholder="State / Province / Region"></input>
+		<input class="formInput" type="text" placeholder="ZIP / Postal Code"></input>
+		<input class="formInput" type="text" placeholder="Country"></input>
+		<a href="#">
+		<input class="formButton" id="address" type="submit" value="Submit"></input>
+		</a>
+	
+	</form>
+	
+	</body>
+</html>
